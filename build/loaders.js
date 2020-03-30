@@ -2,10 +2,11 @@
  * @Author: PT
  * @Date: 2020-03-24 17:54:14
  * @LastEditors: PT
- * @LastEditTime: 2020-03-26 10:32:49
+ * @LastEditTime: 2020-03-30 13:31:40
  * @Description: loader配置
  */
 const MiniCssExtractPlugin = require('mini-css-extract-plugin') // 将js中的css抽离出来 减少js包
+const path = require('path')
 
 module.exports = function (devMode) {
   const loaders = [
@@ -35,7 +36,21 @@ module.exports = function (devMode) {
         },
         'css-loader',
         'postcss-loader',
-        'less-loader'
+        'less-loader',
+        // {
+        //   loader: 'less-loader',
+        //   options: {
+        //     prependData: `@env: ${process.env.NODE_ENV};`,
+        //   }
+        // },
+        {
+          loader: 'style-resources-loader',
+          options: {
+            patterns: [
+              path.resolve(__dirname,'../src/assets/styles/_variable.less')
+            ]
+          }
+        }
       ],
       // exclude: /node_modules/
     },

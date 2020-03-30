@@ -2,7 +2,7 @@
  * @Author: PT
  * @Date: 2020-03-24 17:50:38
  * @LastEditors: PT
- * @LastEditTime: 2020-03-26 17:05:10
+ * @LastEditTime: 2020-03-30 13:00:26
  * @Description: webpack打包配置
  */
 const devMode = process.env.NODE_ENV !== 'production' // 是否为开发模式

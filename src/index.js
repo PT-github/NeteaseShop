@@ -2,18 +2,17 @@
  * @Author: PT
  * @Date: 2020-03-23 09:49:01
  * @LastEditors: PT
- * @LastEditTime: 2020-03-26 17:55:24
+ * @LastEditTime: 2020-03-27 22:48:28
  * @Description: 入口
  */
 import 'lib-flexible'
 import Vue from 'vue'
 import '@/assets/styles/common.less' // 全局样式控制
-import '@/assets/styles/a.css' // 全局样式控制
+import 'swiper/css/swiper.css' // 全局样式控制
 import config from './config'
 import router from './router';
-import { Button } from 'vant';
+import '@/utils/use';
 import App from './App.vue'
-Vue.use(Button);
 
 console.log('=====================')
 console.log(config)

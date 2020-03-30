@@ -2,7 +2,7 @@
  * @Author: PT
  * @Date: 2020-03-25 17:37:42
  * @LastEditors: PT
- * @LastEditTime: 2020-03-25 17:44:54
+ * @LastEditTime: 2020-03-30 13:55:21
  * @Description: 路由配置
  */
 import Vue from 'vue'
@@ -13,15 +13,25 @@ Vue.use(Router)
 const router = new Router({
   routes: [
     {
-      path: '/login',
+      path: '/user',
       name: 'login',
-      component: () => import(/* webpackChunkName: 'Login' */ '@/views/login')
+      component: () => import(/* webpackChunkName: 'User' */ '@/views/user/user')
     },
     {
-      path: '/home',
+      path: '/',
       name: 'home',
-      component: () => import(/* webpackChunkName: 'Home' */ '@/views/home')
+      component: () => import(/* webpackChunkName: 'Home' */ '@/views/home/home')
     },
+    {
+      path: '/discount',
+      name: 'discount',
+      component: () => import(/* webpackChunkName: 'Discount' */ '@/views/discount/discount')
+    },
+    {
+      path: '/cart',
+      name: 'cart',
+      component: () => import(/* webpackChunkName: 'Cart' */ '@/views/cart/cart')
+    }
   ]
 })
 export default router
