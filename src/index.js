@@ -2,7 +2,7 @@
  * @Author: PT
  * @Date: 2020-03-23 09:49:01
  * @LastEditors: PT
- * @LastEditTime: 2020-03-27 22:48:28
+ * @LastEditTime: 2020-03-31 09:45:43
  * @Description: 入口
  */
 import 'lib-flexible'
@@ -14,8 +14,9 @@ import router from './router';
 import '@/utils/use';
 import App from './App.vue'
 
+Vue.prototype.$lib = window.lib
 console.log('=====================')
-console.log(config)
+console.log(config, window.lib)
 console.log('=====================')
 
 Vue.config.productionTip = false

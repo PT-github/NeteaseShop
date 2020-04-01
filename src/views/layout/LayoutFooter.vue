@@ -38,6 +38,7 @@ export default {
 </script>
 <style lang='less' scoped>
 .layout-footer {
+  height: 50px;
 }
 </style>
 <style lang="less">

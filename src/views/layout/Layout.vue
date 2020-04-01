@@ -2,7 +2,7 @@
  * @Author: PT
  * @Date: 2020-03-27 22:39:41
  * @LastEditors: PT
- * @LastEditTime: 2020-03-27 22:48:14
+ * @LastEditTime: 2020-03-31 09:30:12
  * @Description: 外框
  -->
 <template>
@@ -34,4 +34,8 @@ export default {
 };
 </script>
 <style lang='less' scoped>
+.layout {
+  width: 100%;
+  height: 100%;
+}
 </style>

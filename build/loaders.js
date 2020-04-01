@@ -2,7 +2,7 @@
  * @Author: PT
  * @Date: 2020-03-24 17:54:14
  * @LastEditors: PT
- * @LastEditTime: 2020-03-30 13:31:40
+ * @LastEditTime: 2020-03-30 18:06:25
  * @Description: loader配置
  */
 const MiniCssExtractPlugin = require('mini-css-extract-plugin') // 将js中的css抽离出来 减少js包
@@ -78,7 +78,7 @@ module.exports = function (devMode) {
           loader: 'url-loader',
           options: {
             limit: 10240, // 10K
-            esModule: false,
+            esModule: true,
             fallback: {
               loader: 'file-loader',
               options: {

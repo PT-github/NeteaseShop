@@ -2,7 +2,7 @@
  * @Author: PT
  * @Date: 2020-03-25 17:37:42
  * @LastEditors: PT
- * @LastEditTime: 2020-03-30 13:55:21
+ * @LastEditTime: 2020-03-31 17:54:34
  * @Description: 路由配置
  */
 import Vue from 'vue'
@@ -31,7 +31,12 @@ const router = new Router({
       path: '/cart',
       name: 'cart',
       component: () => import(/* webpackChunkName: 'Cart' */ '@/views/cart/cart')
-    }
+    },
+    {
+      path: '/product',
+      name: 'Product',
+      component: () => import(/* webpackChunkName: 'Product' */ '@/views/home/product')
+    },
   ]
 })
 export default router
